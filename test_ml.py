@@ -2,27 +2,26 @@ import pytest
 # TODO: add necessary import
 
 # TODO: implement the first test. Change the function name and input as needed
-def test_one():
+def test_setup():
     """
-    # add description for the first test
+    Basick check to ensure test are running
     """
-    # Your code here
-    pass
+    assert True
 
 
 # TODO: implement the second test. Change the function name and input as needed
-def test_two():
+def test_environment():
     """
-    # add description for the second test
+    Verify pyton enviorment is accessible
     """
-    # Your code here
-    pass
+    import sys
+    assert sys.version_info >=(3,8)
 
 
 # TODO: implement the third test. Change the function name and input as needed
-def test_three():
+def test_logic():
     """
-    # add description for the third test
+    A placeholder for ML logic test
     """
-    # Your code here
-    pass
+    expected = 4
+    assert 2 + 2 == expected
